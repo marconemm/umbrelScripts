@@ -38,7 +38,6 @@ umbrelStop() {
 	echo "\nDo You really want to stop all umbrel applications?\nContinue? (Y/N):"; read confirm
 
 	if [[ "$confirm" = [yYsSeE] ]]; then
-		echo "OK!!!!"
-		# sudo "${SCRIPTS}stop"
+		sudo "${SCRIPTS}stop"
 	fi
 }
